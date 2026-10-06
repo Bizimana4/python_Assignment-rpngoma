@@ -4,6 +4,7 @@ Run:  python app.py      then open the local URL shown in the terminal.
 Train first (python train.py) so the models/ folder exists.
 """
 import json
+import os
 import tempfile
 from pathlib import Path
 
@@ -248,4 +249,7 @@ def build_ui():
 
 
 if __name__ == "__main__":
-    build_ui().launch(server_name="127.0.0.1")
+    build_ui().launch(
+        server_name=os.environ.get("GRADIO_SERVER_NAME", "127.0.0.1"),
+        server_port=int(os.environ.get("PORT", "7862")),
+    )

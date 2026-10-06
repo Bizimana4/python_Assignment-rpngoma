@@ -32,6 +32,16 @@ To retrain from scratch (about 1-2 minutes) and regenerate everything in `result
 py -3 train.py
 ```
 
+## Deploy from GitHub
+
+The app can be hosted as a public web service on Render while this GitHub repository remains the source code:
+
+1. Push the project to the `main` branch on GitHub.
+2. Sign in to [Render](https://dashboard.render.com), choose **New + > Blueprint**, and connect this repository.
+3. Render reads `render.yaml` and builds the web service. When deployment finishes, open the `onrender.com` URL shown in the Render dashboard.
+
+The included configuration uses Render's free plan. Free services sleep after 15 minutes without traffic and can take about a minute to wake up when opened.
+
 Or open **`CAT_notebook.ipynb`** in Jupyter / PyCharm and run all cells. It follows the marking scheme in order, shows the results and launches the app. (It already contains the outputs from a full run.)
 
 If the saved model cannot be loaded because of a different TensorFlow version, the app retrains automatically and carries on.
