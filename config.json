@@ -1,0 +1,32 @@
+{
+  "data_path": "data/Crop_recommendation.csv",
+  "seed": 42,
+  "test_size": 0.15,
+  "val_size": 0.15,
+  "batch_size": 32,
+  "max_epochs": 150,
+  "early_stopping_patience": 15,
+  "experiments": [
+    {
+      "name": "v1_baseline",
+      "use_engineered_features": false,
+      "hidden_units": [32],
+      "dropout": 0.0,
+      "learning_rate": 0.01
+    },
+    {
+      "name": "v2_deeper_regularised",
+      "use_engineered_features": false,
+      "hidden_units": [64, 32],
+      "dropout": 0.2,
+      "learning_rate": 0.001
+    },
+    {
+      "name": "v3_engineered_features",
+      "use_engineered_features": true,
+      "hidden_units": [128, 64, 32],
+      "dropout": 0.3,
+      "learning_rate": 0.001
+    }
+  ]
+}

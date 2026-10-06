@@ -1,0 +1,9 @@
+{
+  "best_experiment": "v3_engineered_features",
+  "test_metrics": {
+    "accuracy": 0.9939393939393939,
+    "precision_macro": 0.9943181818181818,
+    "recall_macro": 0.993939393939394,
+    "f1_macro": 0.9939326524421074
+  }
+}

@@ -1,0 +1,4 @@
+experiment,features,hidden_units,dropout,learning_rate,epochs_run,train_accuracy,val_accuracy,val_f1_macro,val_loss,train_seconds
+v1_baseline,7,[32],0.0,0.01,92,0.9955,0.9909,0.9909,0.0176,15.1
+v2_deeper_regularised,7,"[64, 32]",0.2,0.001,150,0.9883,0.9909,0.991,0.0322,54.4
+v3_engineered_features,13,"[128, 64, 32]",0.3,0.001,94,0.9877,0.9939,0.9939,0.0294,52.3

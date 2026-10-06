@@ -1,0 +1,28 @@
+{
+  "rows": 2200,
+  "columns": [
+    "N",
+    "P",
+    "K",
+    "temperature",
+    "humidity",
+    "ph",
+    "rainfall",
+    "label"
+  ],
+  "missing_values": 0,
+  "duplicate_rows": 0,
+  "n_classes": 22,
+  "rows_per_class_min": 100,
+  "rows_per_class_max": 100,
+  "iqr_outliers_per_feature": {
+    "N": 0,
+    "P": 138,
+    "K": 200,
+    "temperature": 86,
+    "humidity": 30,
+    "ph": 57,
+    "rainfall": 100
+  },
+  "rows_removed_by_cleaning": 0
+}
